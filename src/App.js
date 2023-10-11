@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{ useCallback, useState,useEffect } from 'react';
+import AnswerBlock from './components/AnswerBlock';
+import Board from './components/Board';
+import Header from './components/Header';
 function App() {
+  const [stage, setStage] = useState(1);
+  const [time, setTime ] = useState(15);
+  const [score, setScore] = useState(0);
+  
+  const onClickAnswer = useCallback(()=>{
+    setStage(stage+1);
+    setTime(15);
+    setScore(Math.pow(stage,3) * time);
+  },[stage,time,score])
+
+
+  const onClickWrong = useCallback(()=>{
+    if(time>3){
+      setTime(time-3);
+    }
+    else{
+      setTime(0)
+    }
+  },[time])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Header stage={stage} score={score} time={time}> </Header>
+        <Board onClickAnswer={onClickAnswer} onClickWrong={onClickWrong} stage={stage} />
+      </div>
+    
   );
 }
 
