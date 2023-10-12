@@ -3,7 +3,7 @@ import AnswerBlock from './AnswerBlock';
 import WrongBlock from './WrongBlock';
 import { styled } from 'styled-components';
 function Board(props){
-    const {onClickAnswer, onClickWrong, stage} =props;
+    const {onClickAnswer, onClickWrong, stage ,start} =props;
     const [index, setIndex] =useState(2);
 
     //여기서 색상을 만들어줘야함
@@ -27,7 +27,7 @@ function Board(props){
 
     const [baseColors, answerColors] =useMemo(()=>
     ramdomColor(),
-    [stage])
+    [stage ,start])
 
     
   
@@ -56,6 +56,7 @@ const BoardWrapper = styled.div`
     height:360px;
     display:flex;
     flex-wrap: wrap;
+    margin:auto;
 `
 
 export default Board;

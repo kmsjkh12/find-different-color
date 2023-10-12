@@ -14,5 +14,6 @@ const Block = styled.div`
     height: ${(props) => props.blockSize }px;
    background-color: ${(props) => props.color };
     margin:2px;
+    border-radius:5px;
 `
 export default AnswerBlock;

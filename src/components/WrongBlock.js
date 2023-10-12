@@ -15,6 +15,8 @@ function WrongBlock(props){
         height: ${(props) => props.blockSize  }px;
         background-color: ${(props)=>props.color};
         margin:2px;
+        border-radius:5px;
+
     `
     
 
