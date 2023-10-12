@@ -5,7 +5,7 @@
 구현기간 : 2일
 
 ## 구현영상
-![color](https://github.com/kmsjkh12/find-different-color/assets/121033327/bf193bb9-c482-43c2-bd2e-c1c87c48b516)
+![color_git](https://github.com/kmsjkh12/find-different-color/assets/121033327/e21f930c-dfcb-4721-aa59-66961bb14984)
 
 ## 규칙
 ![image](https://github.com/kmsjkh12/find-different-color/assets/121033327/6e35d21a-01e2-4ca6-9826-a0a56433f2ee)
@@ -63,9 +63,9 @@
 
 
 ## 추후 개선점 
-백엔드를 연결해서 진짜 게임처럼 닉네임을 입력해서 유저들끼리 랭킹 시스템을 도입하면 재밌을거 같다. 
+백엔드를 연결해서 진짜 게임처럼 닉네임을 입력해서 유저들끼리 랭킹 시스템을 도입하면 재밌을거 같다. \
 숫자에 애니메이션을 입히면 더 완성도있는 프로젝트가 될 것 같다.
 
 
 ## 실행
-클론 후 npm start
+npm start
