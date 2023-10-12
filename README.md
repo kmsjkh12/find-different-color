@@ -3,6 +3,10 @@
 넘블 프로젝트 클론하기 챌린지 \
 예시 사이트 : https://numble-react.vercel.app/  \
 구현기간 : 2일
+
+## 구현영상
+![color](https://github.com/kmsjkh12/find-different-color/assets/121033327/bf193bb9-c482-43c2-bd2e-c1c87c48b516)
+
 ## 규칙
 ![image](https://github.com/kmsjkh12/find-different-color/assets/121033327/6e35d21a-01e2-4ca6-9826-a0a56433f2ee)
 ![image](https://github.com/kmsjkh12/find-different-color/assets/121033327/36641f97-75d3-4811-8ef9-dc2920b24dff)
